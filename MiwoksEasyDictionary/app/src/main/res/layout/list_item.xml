@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tan_background"
+    android:orientation="horizontal"
+    android:minHeight="@dimen/list_item_height"
+        >
+    <ImageView
+        android:id="@+id/miwok_image_view"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/miwok_Text_View"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                tools:text="lutti" />
+
+        <TextView
+            android:id="@+id/default_Text_View"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            tools:text="one"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="16dp"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            />
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/miwok_audio_play_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/play_button" />
+
+    </RelativeLayout>
+</LinearLayout>
